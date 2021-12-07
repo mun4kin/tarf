@@ -1,0 +1,47 @@
+@import '~juicyfront/styles/variables';
+@import 'src/styles/fonts';
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-element__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: white;
+  border-radius: 8px;
+  height: 48px;
+  margin-bottom: 8px;
+}
+
+.list-element__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  span:nth-child(1), span:nth-child(2), span:nth-child(4) {
+    width: 15%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 16px;
+  }
+  .list-element__productLine {}
+}
+
+.list-element__dots-btn {
+  width: 5%;
+  height: 100%;
+}
+
+.dots-icon {
+  color: --basic-tertiary;
+}
